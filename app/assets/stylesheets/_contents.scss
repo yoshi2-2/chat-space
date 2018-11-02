@@ -1,19 +1,79 @@
 .contents{
-  height: 100%;
-  widht: 100%;
+  height: 100vh;
+  widht: 100vw;
   .content__left{
-    float: left;
+    height: 100%;
     width: 300px;
+    float: left;
+    background-color: #2f3e51;
+    color: #FFFFFF;
     .content__left--user{
-      font-size: 16px;
-      font-style: bold;
-      color: #FFFFFF;
+      height: 80px;
       background-color: #253141;
+      margin-bottom: 20px;
+      padding: 0 20px;
+      p{
+        padding-top: 40px;
+        font-size: 16px;
+        font-style: bold;
+      }
+    }
+    .content__left--group{
+      .group_name{
+        text-size: 15px;
+        padding: 0 20px 5px;
+      }
+      p{
+        text-size: 11px;
+        padding: 0 20px 40px;
+      }
     }
   }
   .content__right{
+    position: relative;
     float: right;
-    width: calc()
+    width: calc(100% - 380px);
+    margin-right: 40px;
+    height: 100%;
+    .content__right--grouptitle{
+      padding-top: 35px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      color: #333333;
+      p{
+        font-size: 12px;
+        color: #999999;
+        padding-bottom: 46px;
+      }
+    }
+    .content__right--nickname{
+      font-size: 16px;
+      padding-bottom: 10px;
+      p{
+        font-size: 14px;
+        padding-bottom: 40px;
+      }
+    }
+    footer{
+      position: absolute;
+      bottom: 20px;
+      height: 50px;
+      width: 100%;
+      .input_text{
+        line-height: 50px;
+        width: 78%;
+      }
+      a{
+        width: 3%;
+      }
+      .send{
+        height: 100%;
+        width: 17%;
+        float: right;
+        background-color: #38aef0;
+        color: white;
+      }
+    }
   }
 }
 

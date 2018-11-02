@@ -61,14 +61,14 @@
       width: 100%;
       .input_text{
         line-height: 50px;
-        width: 78%;
+        width: 80%;
       }
       a{
-        width: 3%;
+        width: calc(8%-30px);
       }
       .send{
         height: 100%;
-        width: 17%;
+        width: 12%;
         float: right;
         background-color: #38aef0;
         color: white;

@@ -1,7 +1,14 @@
 @import "./config";
 
+.header{
+  height: 30px;
+  background-color: #38AEF0;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
 .contents{
-  height: 100vh;
+  height: calc(100vh - 30px);
   widht: 100vw;
   .content__left{
     height: 100%;

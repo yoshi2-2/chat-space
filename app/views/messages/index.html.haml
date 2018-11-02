@@ -2,6 +2,8 @@
   .content__left
     .content__left--user
       %p= "ryosukemaehira"
+      %a{href: "#", class: "fa fa-edit icon"}
+      %a{href: "#", class: "fa fa-cog icon"}
     .content__left--group
       .group_name= "神"
       %p= "sdlkfjsdlf"
@@ -29,8 +31,7 @@
       %p= "お腹すいた"
     %footer
       %input{name: "message_input", type: "text", class: "input_text", placeholder: "チャット入力"}
-      %a{href: "#", class: "fa fa-camera-retro"}
+      %a{href: "#", class: "fa fa-camera-retro icon"}
       %input{name: "send_button", type: "submit", value: "send", class: "send"}
-
 
 

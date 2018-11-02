@@ -5,7 +5,7 @@
     height: 100%;
     width: 300px;
     float: left;
-    background-color: #2f3e51;
+    background-color: $ContentLeftColor;
     color: #FFFFFF;
     .content__left--user{
       height: 80px;
@@ -16,6 +16,12 @@
         padding-top: 40px;
         font-size: 16px;
         font-style: bold;
+        float: left;
+      }
+      .icon{
+        float: right;
+        padding-top: 40px;
+        padding-left: 10px;
       }
     }
     .content__left--group{

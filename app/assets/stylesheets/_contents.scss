@@ -77,9 +77,13 @@
       .input_text{
         line-height: 50px;
         width: 80%;
+        position: relative;
       }
-      a{
+      .icon{
         width: calc(8%-30px);
+        position: absolute;
+        right: 21%;
+        top: 18px;
       }
       .send{
         height: 100%;

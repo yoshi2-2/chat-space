@@ -1,0 +1,25 @@
+.message-box{
+  height: 90px;
+  width: calc(100vw - 380px);
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  .textarea{
+    width: 80%;
+    height: 50px;
+    margin: 20px 0;
+    position: relative;
+  }
+  .icon{
+    position: absolute;
+    right: 21%;
+    top: 40%;
+  }
+  .send{
+    height: 50px;
+    width: 13%;
+    background-color: #38aef0;
+    color: white;
+  }
+}
+

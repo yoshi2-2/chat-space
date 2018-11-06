@@ -1,0 +1,38 @@
+.contents{
+  height: 100vh;
+  widht: 100vw;
+  .chat-content{
+    position: relative;
+    float: right;
+    width: calc(100% - 380px);
+    margin-right: 40px;
+    height: 100%;
+    padding-top: 35px;
+    .chat-content__grouptitle{
+      .title{
+        padding-bottom: 15px;
+        font-size: 20px;
+        color: #333333;
+      }
+      .nickname{
+        font-size: 12px;
+        color: #999999;
+        padding-bottom: 46px;
+      }
+    }
+    .chat-content__nickname{
+      .nickname{
+        font-size: 16px;
+        padding-bottom: 10px;
+        .date{
+          font-size: 12px;
+          color: #999999;
+        }
+      }
+      .chat-text{
+        font-size: 14px;
+        padding-bottom: 40px;
+      }
+    }
+  }
+}

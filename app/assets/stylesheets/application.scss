@@ -1,6 +1,7 @@
 @import "./reset";
 @import "font-awesome";
-@import "./variable";
-@import "./contents";
-
-
+@import "./modules/variable";
+@import "./modules/main-content";
+@import "./modules/message-box";
+@import "./modules/sidebar";
+@import "./modules/content-header";

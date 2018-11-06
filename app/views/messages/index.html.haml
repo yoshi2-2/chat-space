@@ -1,7 +1,4 @@
 .contents
   = render partial: "sidebar"
   = render partial: "main-content"
-  %footer
-    %input{name: "message_input", size: "40"}
-    <a href="#" class="fa fa-camera-retro"></a>
-    %input{name: "send_button", type: "submit", value: "send"}
+= render partial: "message-box"

@@ -1,4 +1,4 @@
-## membersテーブル
+## group_usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -15,7 +15,7 @@
 |name|string|null: false, unique: true|
 
 ### Association
-- has_many :members
+- has_many :group_users
 - has_many :messages
 - has_many :groups, through: :members
 
@@ -26,7 +26,7 @@
 |name|string|null: false|
 
 ### Association
-- has_many :members
+- has_many :group_users
 - has_many :messages
 - has_many :users, through: :members
 

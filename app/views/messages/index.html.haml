@@ -1,22 +1,6 @@
 .contents
   = render partial: "sidebar"
-  .content__right
-    .content__right--grouptitle
-      = "sampleグループ"
-      .content__right--groupmember
-      = "ryosukemaehira"
-    .content__right--nickname
-      = "ryosukemaehira"
-      %p= "なるほど"
-    .content__right--nickname
-      = "ryosukemaehira"
-      %p= "水色きれい"
-    .content__right--nickname
-      = "ryosukemaehira"
-      %p= "command Enterで送信したい感ある"
-    .content__right--nickname
-      = "ryosukemaehira 2018/..."
-      %p= "お腹すいた"
+  = render partial: "main-content"
   %footer
     %input{name: "message_input", size: "40"}
     <a href="#" class="fa fa-camera-retro"></a>

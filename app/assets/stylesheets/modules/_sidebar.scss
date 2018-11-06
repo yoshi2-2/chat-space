@@ -1,0 +1,41 @@
+.contents{
+  height: 100vh;
+  widht: 100vw;
+  .sidebar{
+  height: 100%;
+  width: 300px;
+  float: left;
+  background-color: #2f3e51;
+  color: #FFFFFF;
+    .sidebar__main{
+      font-size: 16px;
+      font-style: bold;
+      color: #FFFFFF;
+      height: 80px;
+      background-color: #253141;
+      margin-bottom: 20px;
+      padding: 0 20px;
+      p{
+        padding-top: 40px;
+        font-size: 16px;
+        font-style: bold;
+        float: left;
+      }
+      .icon{
+        float: right;
+        padding-top: 40px;
+        padding-left: 10px;
+      }
+    }
+    .sidebar__group{
+      .group_name{
+        text-size: 15px;
+        padding: 0 20px 5px;
+      }
+      p{
+        text-size: 11px;
+        padding: 0 20px 40px;
+      }
+    }
+  }
+}

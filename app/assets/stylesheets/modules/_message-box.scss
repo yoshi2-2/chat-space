@@ -4,10 +4,11 @@
   position: absolute;
   bottom: 20px;
   right: 40px;
-  .textarea{
+  .form__message{
     width: 85%;
     height: 50px;
     margin: 20px 0;
+    float: left;
     position: relative;
   }
   .icon{
@@ -15,15 +16,15 @@
     right: 16%;
     top: 40%;
   }
-  .send{
+  .form__submit{
     height: 50px;
     width: 13%;
     background-color: $mainblueColor;
     color: white;
     float: right;
-    margin-top: 20px;
+    margin: 20px 0;
   }
-  .file{
+  .hidden{
     width: 30px;
     opacity: 0;
     position: absolute;

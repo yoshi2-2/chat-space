@@ -1,5 +1,9 @@
 .message-box
-  %input{name: "message_input", class: "textarea"}
-  %a{class: "fa fa-camera-retro icon"}
-  %input{type: "file", class: "file"}
-  %input{name: "send_button", type: "submit", value: "send", class: "send"}
+  .form
+    = form_for [@group, @message] do |f|
+      = f.text_field :body, class: 'form__message', placeholder: 'type a message'
+      .form__mask
+        = f.label :image, class: 'form__mask__image' do
+          = fa_icon 'picture-o', class: 'icon'
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'

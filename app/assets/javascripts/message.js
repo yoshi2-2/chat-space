@@ -4,14 +4,12 @@ $(function(){
                     <div class="nickname">
                       ${message.nickname}
                       <span class="date">
-                        ${message.created_at}
+                        ${Date(message.created_at).match(/.{21}/)}
                       </span>
                     </div>
                     <div class="chat-text">
                       <div class="lower-message">
-                        <% if message.body.present? %>
                           <p class="lower-message__content">${message.body}</p>
-                        <% else %>
                           <%= image_tag ${message.image.url} %>
                         <% end %>
                       </div>

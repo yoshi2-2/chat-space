@@ -32,6 +32,7 @@ $(function(){
       appendData(data);
       $('.form__message').val('')
       $(".chat-content").scrollTop($(".chat-content")[0].scrollHeight );
+      $(".form__submit").prop('disabled', false);
     })
     .fail(function(){
       alert("error")

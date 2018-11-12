@@ -31,6 +31,7 @@ $(function(){
     .done(function(data){
       appendData(data);
       $('.textbox').val('')
+      $(".chat-content").scrollTop($(".chat-content")[0].scrollHeight );
     })
     .fail(function(){
       alert("error")

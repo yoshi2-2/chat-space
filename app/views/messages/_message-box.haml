@@ -1,6 +1,6 @@
 .message-box
   .form
-    = form_for [@group, @message] do |f|
+    = form_for [@group, @message], html: {class: "form_data"} do |f|
       = f.text_field :body, class: 'form__message', placeholder: 'type a message'
       .form__mask
         = f.label :image, class: 'form__mask__image' do

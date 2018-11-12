@@ -4,14 +4,12 @@ $(function(){
                     <div class="nickname">
                       ${message.nickname}
                       <span class="date">
-                        ${Date(message.created_at).match(/.{21}/)}
+                        ${Date(message.created_at).match(/.{24}/)}
                       </span>
                     </div>
                     <div class="chat-text">
                       <div class="lower-message">
                           <p class="lower-message__content">${message.body}</p>
-                          <%= image_tag ${message.image.url} %>
-                        <% end %>
                       </div>
                     </div>
                   </div>`
@@ -33,7 +31,6 @@ $(function(){
     .done(function(data){
       appendData(data);
       $('.textbox').val('')
-      alert("成功")
     })
     .fail(function(){
       alert("error")

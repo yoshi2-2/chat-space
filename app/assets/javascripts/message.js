@@ -1,6 +1,8 @@
 $(function(){
   function appendData(message){
-      var html = `<div class="chat-content__nickname">
+    var insertImage = message.image_url ? `<img src="${message.image_url}" class='lower-message__image'>` : "";
+
+      var html = `<div class="chat-content__message">
                     <div class="nickname">
                       ${message.nickname}
                       <span class="date">
@@ -10,6 +12,9 @@ $(function(){
                     <div class="chat-text">
                       <div class="lower-message">
                           <p class="lower-message__content">${message.body}</p>
+                          <img class='lower-message'>
+                            ${insertImage}
+                          </img>
                       </div>
                     </div>
                   </div>`
@@ -22,9 +27,9 @@ $(function(){
     var formData = new FormData(this);
     $.ajax({
       type: "POST",
-      url: href,
-      data: formData,
-      dataType: "json",
+      url:         href,
+      data:        formData,
+      dataType:    "json",
       processData: false,
       contentType: false
     })
@@ -35,7 +40,8 @@ $(function(){
       $(".form__submit").prop('disabled', false);
     })
     .fail(function(){
-      alert("error")
+      alert("メッセージを入力してください");
+      $(".form__submit").prop('disabled', false);
     })
   })
 

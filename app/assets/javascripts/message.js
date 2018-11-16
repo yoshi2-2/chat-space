@@ -2,7 +2,7 @@ $(function(){
   function appendData(message){
     var insertImage = message.image_url ? `<img src="${message.image_url}" class='lower-message__image'>` : "";
 
-      var html = `<div class="chat-content__message">
+      var html = `<div class="chat-content__message" data-id=${message.id}>
                     <div class="nickname">
                       ${message.nickname}
                       <span class="date">
@@ -45,5 +45,29 @@ $(function(){
     })
   })
 
+  // 自動更新
+  var interval = setInterval(function() {
+    if (window.location.href.match(/\/groups\/\d+\/messages/)) {
+      $.ajax({
+        url: window.location.href,
+        type: "get",
+        data: {id: $('.chat-content__message').last().attr('data-id')},
+        dataType: "json"
+      })
 
+      .done(function(data){
+        data.forEach(function(message){
+          appendData(message);
+        })
+        $(".chat-content").scrollTop($(".chat-content")[0].scrollHeight );
+      })
+
+      .fail(function(){
+        alert("自動更新に失敗しました")
+      })
+
+    } else {
+      clearInterval(interval);
+    }
+  }, 5 * 1000 );
 });

@@ -72,3 +72,4 @@ gem 'haml-rails'
   gem 'mini_magick'
 
   gem 'unicorn'
+

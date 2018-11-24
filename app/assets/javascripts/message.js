@@ -1,6 +1,6 @@
 $(function(){
   function appendData(message){
-    var insertImage = message.image_url ? `<img src="${message.image_url}" class='lower-message__image'>` : "";
+    var insertImage = message.image_url ? `<img src="${message.image}" class='lower-message__image'>` : "";
 
       var html = `<div class="chat-content__message" data-id=${message.id}>
                     <div class="nickname">

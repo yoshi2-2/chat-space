@@ -3,5 +3,8 @@
     .title
       = @messagetitle
     .nickname
-      = "メンバー：" + ""
+      = "Member："
+      %span
+        - @members.each do |member|
+          = + member.name
   = render @messages

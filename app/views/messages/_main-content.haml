@@ -2,6 +2,8 @@
   .chat-content__grouptitle
     .title
       = @messagetitle
+      = link_to edit_group_path(@group) do
+        %input{type: "button", value: "Edit", id: 'chat-editbutton'}
     .nickname
       = "Member："
       %span

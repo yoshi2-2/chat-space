@@ -52,7 +52,7 @@ $(function(){
       $.ajax({
         url: window.location.href,
         type: "get",
-        data: {id: $('.chat-text').last().attr('data-id')},
+        data: {id: $('.chat-content__message').last().attr('data-id')},
         dataType: "json"
       })
 
